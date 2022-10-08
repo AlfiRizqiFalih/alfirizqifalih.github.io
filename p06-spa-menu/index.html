@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JQuery Add/Remove Class for SPA Menu</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <div id="about">
+        <p>my name is Alfi Rizqi Falih</p>
+    </div>
+    <div id="projects">
+        <p>moga bisa jadi programer handal</p>
+    </div>
+    <div id="contacts">
+        <p>wa : 087830255738</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#home").hide();
+            $("#about").hide();
+            $("#projects").hide();
+            $("#contacts").hide();
+            $("li").click(function () {
+                let isi = $(this).text();
+                let toLower = isi.toLowerCase();
+                // alert(toLower);
+                $(`#${toLower}`).slideToggle(300);
+            });
+        });
+
+    </script>
+</body>
+
+</html>

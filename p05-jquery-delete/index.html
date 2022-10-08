@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+<style>
+table {
+  font-family: times new roman, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+body {
+	background: blue;
+	color: black;
+}
+
+td, th {
+  border: 2px solid black;
+  text-align: center;
+  padding: 8px;
+}
+
+td:hover{
+		background-color: yellow;
+		letter-spacing: 1px;
+	}
+th {
+  background-color: green;
+}
+
+tr {
+  background-color: white;
+}
+</style>
+</head>
+<body>
+
+<center><h2 style="color:gold;">The Top of 5 My Best Friends</h2></center>
+
+<center><table></center>
+  <tr>
+    <th class="judul_tabel" width="7%">No</th>
+    <th class="judul_tabel" width="33%">Nama</th>
+    <th class="judul_tabel" width="40%">Alamat</th>
+    <th class="judul_tabel" width="20%">aksi</th>
+  </tr>
+  
+  <tr id="row__1">
+		<td>01</td>
+		<td class="nama_mhs">Saeful Amri</td>
+		<td>brebes</td>
+		<td class="hapus" id="hapus__1">Hapus</td>
+	</tr>
+  <tr id="row__2">
+		<td>02</td>
+		<td class="nama_mhs">Rio Harsadino</td>
+		<td>Cirebon</td>
+		<td class="hapus" id="hapus__2">Hapus</td>
+	</tr>
+  <tr id="row__3">
+		<td>03</td>
+		<td class="nama_mhs" id="selvi">Selvi Andini</td>
+		<td>Cirebon</td>
+		<td class="hapus" id="hapus__3">Hapus</td>
+	</tr>
+  <tr id="row__4">
+		<td>04</td>
+		<td class="nama_mhs">Aziz Chairul Imam</td>
+		<td>Cirebon</td>
+		<td class="hapus" id="hapus__4">Hapus</td>
+	</tr>
+  <tr id="row__5">
+		<td>05</td>
+		<td class="nama_mhs">Reza Saputra</td>
+		<td>Cirebon</td>
+		<td class="hapus" id="hapus__5">Hapus</td>
+	</tr>
+  
+</table>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>$(document).ready(function(){
+  //alert(0)
+      $('.nama_mhs').click(function(){
+        //alert(1)
+        let isi = $(this).text();
+        //alert(isi);
+        let isi2 = prompt('Ubah dengan:', isi);
+        if(!isi2) return;
+        //alert(isi2);
+
+        $(this).text(isi2);
+
+      })
+
+
+      $('.hapus').click(function(){
+        //alert(1)
+        let yakin = confirm('Yakin mau menghapus data ini?');
+        if(!yakin) return;
+
+        let id = $(this).prop('id');
+        //alert(id);
+        let rid = id.split('__');
+        let baris_ke = rid[1];
+
+        //alert(baris_ke);
+
+        $('#row__'+baris_ke).fadeOut()
+
+        
+        //alert('Anda yakin')
+
+
+      })
+})</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+body{
+    background-color: whitesmoke;
+}
+
+.perintah-klik{
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.datar{
+    text-align: center;
+    font-weight: bold;
+}
+
+.klik{
+    background-color: blue;
+    color: black;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.klik:hover{
+    background-color: red;
+}
+
+.isi{
+    padding: 30px;
+    box-shadow: 0px 8px 16px 0px rgba(160, 5, 5, 0.2);
+    margin-left: 10px;
+    text-align: center;
+}

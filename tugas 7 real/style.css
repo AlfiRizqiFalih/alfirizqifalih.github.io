@@ -1,22 +1,30 @@
 body {
-    background-color: aqua;
-    padding: 10%;
+  background-color: aqua;
+  padding: 2em;
 }
-img{
-    width: 5cm;
-    height: 5cm;
-    border-radius: 50%;
-    box-shadow: 1px 1px 4px gray;
-    padding: 5px;
-    background: black;
-    margin: 15px;
-    transition: 0.2;
-    opacity: 100%;
-    object-fit: cover;
-    
+img {
+  width: 5cm;
+  height: 5cm;
+  border-radius: 50%;
+  box-shadow: 1px 1px 4px gray;
+  padding: 5px;
+  background: black;
+  margin: 15px;
+  transition: 0.2;
+  opacity: 100%;
+  object-fit: cover;
+  transition: all 0.2s ease-in-out;
+}
+img:hover {
+  transform: scale(1.2);
+  opacity: 100%;
+  box-shadow: 1px 1px 6px rgba(rgb(248, 67, 67), rgb(100, 124, 100), rgb(36, 36, 161), alpha);
 }
 
-img:hover{
-    transform: scale(1.2);
-    opacity: 100%;
-    box-shadow: 1px 1px 6px rgba(rgb(248, 67, 67), rgb(100, 124, 100), rgb(36, 36, 161), alpha);
+/* Kita elemen yang sudah dibungkus dengan div kedalam css */
+/* CSS selector ada 3 yakni: class, id, dan tag */
+/* untuk mengambil selector class kita gunakan tanda titik kemudian nama class nya */
+/* contoh dibawah kita ingin memproses styling class bernama "bungkus_profle" */
+.bungkus_profile {
+  text-align: center;
+}

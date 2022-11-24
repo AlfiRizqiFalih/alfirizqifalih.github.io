@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background-color: #A2d2FF;
+}
+
+.wrapping {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* header */
+.header {
+    width: 100%;
+}
+/* akhir header */
+
+/* form */
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: "Trirong", sans-serif;
+    color: #ffafcc;
+}
+
+.inst {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Trirong", sans-serif;
+    color: black;
+}
+
+
+ol li {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 20px;
+    font-family: "Trirong", sans-serif;
+    color: black;
+}
+
+/* wrapping2 */
+.wrapping2 {
+    width: 100%;
+    margin: auto;
+    background-color:#BDE0FE;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-family: "Trirong", sans-serif;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+}
+/* end of wrapping2 */
+
+.hadua {
+    font-size: 27px;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(41, 38, 38);
+}
+
+hr {
+    margin: 10px;
+}
+
+
+label {
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(41, 38, 38);
+}
+
+.isi {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.masukkan, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type=radio] {
+    margin: 20px;
+}
+
+input[type=file] {
+    background-color: #fff;
+    border: none;
+    font-size: 12px;
+    color: gray;
+}
+
+.tombol {
+    width: 100%;
+    background-color: #ffafcc;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tombol:hover {
+    background-color: #ffc8dd;
+    transition: .2s;
+}
+
+/* end of form */
+
+/* media query */
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    body {
+        box-sizing: border-box;
+    }
+
+    .header img{
+      width: 100%;
+    }
+
+    h1 {
+        font-size: 12px;
+    }
+
+    .inst {
+        font-size: 10px;
+    }
+
+    ol li {
+        font-size: 9px;
+    }
+
+    .wrapping2 {
+        padding: 15px;
+    }
+
+    .hadua {
+        font-size: 15px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    .isi {
+        font-size: 9px;
+    }
+
+    .masukkan, select {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    input[type=file] {
+        font-size: 10px;
+    }
+
+    .tombol {
+        padding: 8px 10px;
+        margin: 8px 0;
+        cursor: pointer;
+        font-size: 10px;
+    }
+    
+}
+/* akhir media query */
